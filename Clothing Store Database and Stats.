@@ -1,0 +1,28 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, Type TEXT, color TEXT,ORIG_QTY INTEGER, QTY_SOLD Integer,QTY_REM INTEGER);
+
+INSERT INTO clothing VALUES (1, "T-shirt", "Blue", 50, 9,41);
+INSERT INTO clothing Values (2, "Woven Top", "Green", 65, 20,45);
+INSERT INTO clothing VALUES (3, "Knitted", "white", 32, 10,22);
+INSERT INTO clothing VALUES (4, "Pants", "Black", 95, 20,75);
+INSERT INTO clothing VALUES (5, "Shorts", "Black", 77, 17,60);
+SELECT * FROM clothing;
+
+--Display the database by Quantity Remaining (Greatest to Least).
+SELECT * FROM clothing 
+ORDER BY QTY_REM desc;
+
+--What is the AVG amount sold?
+SELECT AVG(QTY_SOLD) "Average amount of clothing sold"
+FROM clothing
+
+
+
+
+
+
+
+
+
+
+
+
